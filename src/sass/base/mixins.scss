@@ -3,8 +3,22 @@
 
 @mixin title {
   color: $dark;
+  font-style: normal;
   font-weight: 500;
-  letter-spacing: 0%;
-  text-align: left;
+  text-align: normal;
+  text-transform: uppercase;
+}
+
+@mixin button {
+  display: block;
+  border-radius: 2px;
+  border: 1px solid $dark;
+  color: $dark;
+  background-color: transparent;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: normal;
   text-transform: uppercase;
 }
