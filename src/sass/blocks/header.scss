@@ -1,0 +1,54 @@
+// @use "/src/sass/base/variables.scss" as v;
+@use "/src/sass/base/variables.scss" as *;
+
+.header {
+  display: flex;
+  // width: 90%;
+  justify-content: space-between;
+
+  &__logo {
+    img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+    }
+  }
+
+  &__icons {
+    width: 70px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    // align-items: start;
+    gap: 10px;
+    font-size: 20px;
+    color: $dark;
+
+    a {
+      span {
+        color: $dark;
+      }
+    }
+
+  }
+}
+
+.burger {
+  margin-top: 5px;
+  width: 70px;
+  height: 20px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  // padding-right: 35px;
+
+  span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: $dark;
+    border-radius: 1px;
+  }
+}
