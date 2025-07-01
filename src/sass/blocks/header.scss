@@ -16,11 +16,11 @@
 
   &__icons {
     width: 70px;
-    height: 20px;
+    // height: 20px;
     display: flex;
     flex-direction: row;
     justify-content: end;
-    // align-items: start;
+    align-items: start;
     gap: 10px;
     font-size: 20px;
     color: $dark;
@@ -37,18 +37,23 @@
 .burger {
   margin-top: 5px;
   width: 70px;
-  height: 20px;
 
-  display: flex;
-  flex-direction: column;
-  row-gap: 6px;
+
   // padding-right: 35px;
 
-  span {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: $dark;
-    border-radius: 1px;
+  a {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    width: 40px;
+    height: 30px;
+
+    span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: $dark;
+      border-radius: 1px;
+    }
   }
 }
